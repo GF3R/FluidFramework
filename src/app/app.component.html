@@ -1,0 +1,11 @@
+<div class="app" *ngIf="diceMap">
+	<style>
+		.wrapper { text-align: center }
+		.dice { font-size: 200px }
+		.roll { font-size: 50px;}
+	  </style>
+	  <div class="wrapper">
+		<div class="dice">{{getDiceIcon()}}</div>
+		<button (click)="onButtonClick()" class="roll"> Roll </button>
+	  </div>
+</div>
